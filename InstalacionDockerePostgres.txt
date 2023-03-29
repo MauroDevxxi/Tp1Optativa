@@ -1,0 +1,15 @@
+abrir docker
+1ro ejecutar comando 
+>docker pull postgres 	instala postgres en la VM
+
+para poder ejecutar hay que crear un usuario y contraseña so...
+""-e"" significa que pasa una variable de entorno
+""-d"" es para ejecutar y dejar ejecutando el comando
+""-p"" es para exponer el puerto y cambiarlo o no...
+>docker run --name some-postgres -e POSTGRES_PASSWORD=palabra -d postgres
+
+>docker ps 	sirve para ver los procesos en ejecucion, ver contenedores
+>docker ps -a	sirve para ver historial de los contenedores
+>docker rm (+ nombre de la imagen)   borra el contenedor del historial    previo hay que pararlo
+>docker stop (+ nombre de la imagen)
+
